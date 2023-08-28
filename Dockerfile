@@ -27,6 +27,7 @@ EXPOSE 8000
 
 # make migrations
 CMD python3 manage.py migrate
+CMD python3 manage.py makemigrations
 
 # start server  
 CMD python manage.py runserver 0.0.0.0:8000
