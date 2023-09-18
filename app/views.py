@@ -3,6 +3,7 @@ from .forms import RegistrationForm
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 def index(request):
     return render(request, 'index.html')
@@ -62,3 +63,24 @@ def user_logout(request):
     logout(request)
     return redirect('index')
 
+
+
+@login_required
+def student_information(request):
+    user = request.user
+    context = {
+        'user': user,  
+    }
+    return render(request, 'student_information.html')
+
+@login_required
+def marks(request):
+    return render(request, 'marks.html')
+
+@login_required
+def fees(request):
+    return render(request, 'fees.html')
+
+@login_required
+def attendance(request):
+    return render(request, 'attendance.html')

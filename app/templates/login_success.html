@@ -1,2 +1,84 @@
-<h1> Login Successful </h1>
-<a href="{% url 'index' %}" class="btn btn-primary">Log Out</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="your-css-file.css"> <!-- Include your custom CSS file -->
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto; /* Adjust the margin to lower the container */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .block {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .btn-logout {
+            background-color: #007BFF; /* Blue color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin: 20px auto 0; 
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Student!</h1>
+
+        <!-- Student Information Block -->
+        <div class="block">
+            <h2><a href="{% url 'student_information' %}">Student Information</h2>
+            <!-- Display student information here -->
+        </div>
+
+        <!-- Marks Block -->
+        <div class="block">
+            <h2>Marks</h2>
+            <!-- Display marks or a table of marks here -->
+        </div>
+
+        <!-- Fees Block -->
+        <div class="block">
+            <h2>Fees</h2>
+            <!-- Display fee information or payment history here -->
+        </div>
+
+        <!-- Attendance Block -->
+        <div class="block">
+            <h2>Attendance</h2>
+            <!-- Display attendance details or a chart here -->
+        </div>
+    </div>
+
+    <!-- Log Out Button -->
+    <a href="{% url 'index' %}" class="btn-logout">Log Out</a>
+</body>
+</html>
