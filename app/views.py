@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
+from .models import StudentMarks
+from .models import StudentFees
+from .models import StudentAttendance
 
 def index(request):
     return render(request, 'index.html')
@@ -63,24 +66,45 @@ def user_logout(request):
     logout(request)
     return redirect('index')
 
-
-
 @login_required
 def student_information(request):
     user = request.user
     context = {
-        'user': user,  
+        'user': user,
+#      'form': form,
     }
-    return render(request, 'student_information.html')
+
+    return render(request, 'student_information.html', context)
+
 
 @login_required
-def marks(request):
-    return render(request, 'marks.html')
+def student_marks(request):
+    marks = StudentMarks.objects.all()
+    
+    context = {
+        'marks': marks
+    }
+    return render(request, 'student_marks.html', context)
+
 
 @login_required
-def fees(request):
-    return render(request, 'fees.html')
+def student_fees(request):
+    fees_records = StudentFees.objects.all()
+    
+    context = {
+        'fees_records': fees_records,
+    }
+    
+    return render(request, 'student_fees.html', context)
+
 
 @login_required
-def attendance(request):
-    return render(request, 'attendance.html')
+def student_attendance(request):
+
+    attendance_records = StudentAttendance.objects.all()
+
+    context = {
+        'attendance_records': attendance_records,
+    }
+
+    return render(request, 'student_attendance.html')

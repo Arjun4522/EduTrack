@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fees</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Fees</h1>
+    
+    <table>
+        <tr>
+            <th>Semester</th>
+            <th>Semester Fees</th>
+            <th>Bus Fare</th>
+            <th>Hostel Charge</th>
+            <th>Due Date</th>
+            <th>Fine</th>
+            <th>Examination Fees</th>
+        </tr>
+        {% for record in fees_records %}
+        <tr>
+            <td>{{ record.semester }}</td>
+            <td>{{ record.semester_fees }}</td>
+            <td>{{ record.bus_fare }}</td>
+            <td>{{ record.hostel_charge }}</td>
+            <td>{{ record.due_date|date:"Y-m-d" }}</td>
+            <td>{{ record.fine }}</td>
+            <td>{{ record.examination_fees }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'user_login' %}" class="btn-back">Back</a>
+</body>
+</html>

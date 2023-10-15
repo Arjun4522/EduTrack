@@ -54,30 +54,29 @@
         <h1>Welcome, Student!</h1>
 
         <!-- Student Information Block -->
-        <div class="block">
-            <h2><a href="{% url 'student_information' %}">Student Information</h2>
-            <!-- Display student information here -->
-        </div>
+        <!-- Student Information Block -->
+<div class="block">
+    <h2><a href="{% url 'student_information' %}">Student Information</a></h2>
+    <!-- Display student information here -->
+</div>
 
-        <!-- Marks Block -->
-        <div class="block">
-            <h2>Marks</h2>
-            <!-- Display marks or a table of marks here -->
-        </div>
+<!-- Marks Block -->
+<div class="block">
+    <h2><a href="{% url 'student_marks' %}">Student Marks</a></h2>
+    <!-- Display marks or a table of marks here -->
+</div>
 
-        <!-- Fees Block -->
-        <div class="block">
-            <h2>Fees</h2>
-            <!-- Display fee information or payment history here -->
-        </div>
+<!-- Fees Block -->
+<div class="block">
+    <h2><a href="{% url 'student_fees' %}">Student Fees</a></h2>
+    <!-- Display fee information or payment history here -->
+</div>
 
-        <!-- Attendance Block -->
-        <div class="block">
-            <h2>Attendance</h2>
-            <!-- Display attendance details or a chart here -->
-        </div>
-    </div>
-
+<!-- Attendance Block -->
+<div class="block">
+    <h2><a href="{% url 'student_attendance' %}">Student Attendance</a></h2>
+    <!-- Display attendance details or a chart here -->
+</div>
     <!-- Log Out Button -->
     <a href="{% url 'index' %}" class="btn-logout">Log Out</a>
 </body>
