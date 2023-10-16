@@ -106,8 +106,11 @@ The system comprises of the following relations:
 3. Student Fees
 4. Student Attendance
 
+All above models are linked to the `User` model(foreign key).
+
 Each table(relation) has a 'model' that defines the schema/architecture of the table. The models are defined in the `models.py` file in the app directory. Each model has a view of it's own. A 'view' is the request handler of the particular model. It takes in the request as a parameter, processes the request, and renders the corresponding template. The `views.py` file in the app folder consists of the views. The 'templates' are the static contents of the application. The templates comprise of the whole frontend of the application.
 The `app/templates` directory contain the template files. 
+
 
 ![mvt](https://github.com/Arjun4522/EduTrack/assets/94633408/bc70c596-56a2-4604-aba6-522abc7c5c5f)
 
