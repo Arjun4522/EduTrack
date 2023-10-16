@@ -90,12 +90,28 @@ This data will be stored in the database using a predefined model 'User' that dj
 
 SQLite has been used for the database engine. It is a lightweight, open-source, embedded relational databse management system.
 
-![db](https://github.com/Arjun4522/EduTrack/assets/94633408/74abfada-41de-44bb-9243-a3df1dae444b)
+![db](https://github.com/Arjun4522/EduTrack/assets/94633408/7b7e7c5a-2878-4c63-910e-bb713c3fa478)
 
-
-Once registered, they can login using their registered enrollment number and password.
+Once registered, they can login using their registered information:
+1. Enrollment Number
+2. Password
 
 ![login](https://github.com/Arjun4522/EduTrack/assets/94633408/d78d76e0-de4a-4dc5-ac4a-9b645d9f5a55)
+
+The web application has been built on the MVT, or the Model-View-Template architecture. 
+
+The system comprises of the following relations:
+1. Student Information
+2. Student Marks
+3. Student Fees
+4. Student Attendance
+
+Each table(relation) has a 'model' that defines the schema/architecture of the table. The models are defined in the `models.py` file in the app directory. Each model has a view of it's own. A 'view' is the request handler of the particular model. It takes in the request as a parameter, processes the request, and renders the corresponding template. The `views.py` file in the app folder consists of the views. The 'templates' are the static contents of the application. The templates comprise of the whole frontend of the application.
+The `app/templates` directory contain the template files. 
+
+![mvt](https://github.com/Arjun4522/EduTrack/assets/94633408/bc70c596-56a2-4604-aba6-522abc7c5c5f)
+
+
 
 
 
