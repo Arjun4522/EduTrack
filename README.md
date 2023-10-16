@@ -123,8 +123,15 @@ Additional files include:
 ![info](https://github.com/Arjun4522/EduTrack/assets/94633408/30a54ac3-49e1-4cc7-a5b0-9c5ae993c12d)
 
 
+![marks](https://github.com/Arjun4522/EduTrack/assets/94633408/d0e451fb-992a-4947-a705-a6f1a30d1b42)
 
+Above images show the different tabs, `personal information` and `student marks`. The personal information data is being stored in the `User` model. Marks of each student will be input by the admin in the admin portal of the system. Django provides a built-in admin portal for ease of use. 
 
+![backend](https://github.com/Arjun4522/EduTrack/assets/94633408/a5250b41-c3ac-4fef-8cc9-4521591e74cf)
+
+Below is the logical view of the student marks table.
+
+![db_marks](https://github.com/Arjun4522/EduTrack/assets/94633408/64f92e5d-a76d-4dad-a45a-cd9187d783d3)
 
 
 
