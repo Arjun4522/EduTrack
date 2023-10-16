@@ -8,8 +8,7 @@
   - [Installation](#installation)
 - [Usage](#usage)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
+- [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -77,8 +76,26 @@ Create and activate virtual environment:
 
 ## Documentation
 
+Students need to register using their personal information:
+1. Enrollment number
+2. First Name
+3. Last Name
+4. Email
+5. Phone
+6. Password
+
+This data will be stored in the database using a predefined model 'User' that django readily offers.
+
+![register](https://github.com/Arjun4522/EduTrack/assets/94633408/dd4738d4-7c5a-4c70-847f-0d2219f212bf)
+
+SQLite has been used for the database engine. It is a lightweight, open-source, embedded relational databse management system.
+
+![db](https://github.com/Arjun4522/EduTrack/assets/94633408/74abfada-41de-44bb-9243-a3df1dae444b)
 
 
+Once registered, they can login using their registered enrollment number and password.
+
+![login](https://github.com/Arjun4522/EduTrack/assets/94633408/d78d76e0-de4a-4dc5-ac4a-9b645d9f5a55)
 
 
 
