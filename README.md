@@ -111,6 +111,15 @@ The `app/templates` directory contain the template files.
 
 ![mvt](https://github.com/Arjun4522/EduTrack/assets/94633408/bc70c596-56a2-4604-aba6-522abc7c5c5f)
 
+Additional files include:
+1. `urls.py`- routes/urls
+2. `forms.py`- form structures
+3. `admin.py`- model registration
+4. `db.sqlite3`- SQL file
+
+![info](https://github.com/Arjun4522/EduTrack/assets/94633408/30a54ac3-49e1-4cc7-a5b0-9c5ae993c12d)
+
+
 
 
 
