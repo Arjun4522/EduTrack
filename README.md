@@ -60,7 +60,7 @@ Create and activate virtual environment:
   source env/bin/activate
   ```
 
-Run with Django
+### Run with Django
 
   ```sh
   python3 manage.py migrate
@@ -68,7 +68,7 @@ Run with Django
   python3 manage.py runserver
   ```
 
-Run with docker-compose
+### Run with docker-compose
 
   ```sh
   sudo docker-compose down &&
